@@ -1,0 +1,81 @@
+/* Layouts */
+main {
+    padding: 3.5em 2em 0;
+}
+
+.container-long-blog {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Long blog section */
+.long-blog h1 {
+    margin: 0.3em 0;
+}
+
+.long-blog p {
+    margin: 0.3em 0 0.7em;
+}
+
+.long-blog_img {
+    width: 100%;
+    margin: 1.5em auto;
+    border-radius: 3px;
+    display: block;
+    object-fit: cover;
+}
+
+.container-long-blog h2 {
+    margin-bottom: 0.3em;
+}
+
+/* Recent posts section */
+.recent-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.blog {
+    padding: 0;
+    margin-bottom: 5em;
+}
+
+.recent-posts_title {
+    text-align: center;
+    margin: 3em 0 2em;
+    font-weight: 700;
+}
+
+.view-more,
+.view-less {
+    margin-bottom: 3em;
+}
+
+/* Responsive Design */
+@media (min-width: 500px) {
+    main {
+        padding-top: 5em;
+    }
+
+    .recent-posts {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 0 3em;
+    }
+}
+
+@media (min-width: 768px) {
+    .recent-posts {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        gap: 0 3em;
+    }
+
+    .recent-posts_title {
+        font-size: 2rem;
+        margin: 3em 0 2em;
+    }
+
+    .long-blog_img {
+        max-height: 500px;
+        height: 100%;
+    }
+}

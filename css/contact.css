@@ -1,0 +1,170 @@
+/* General Styles */
+.contact {
+    background: linear-gradient(
+        to bottom,
+        rgba(32, 32, 32, 1) 34%,
+        rgba(0, 123, 255, 0) 30%
+    );
+    padding: 10em 2em 0 2em;
+}
+
+.contact-modal {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles and Taglines */
+.contact-title,
+.contact-tagline {
+    text-align: center;
+}
+
+.contact-title {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.contact-tagline {
+    margin: 0.5em;
+    font-size: 2rem;
+}
+
+/* Form Styles */
+form {
+    margin-top: 6em;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 0.5em;
+    color: #6f6f6f;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    padding: 0.8em 1em;
+    width: 100%;
+    border: 2px solid #949494;
+    margin-bottom: 1.5em;
+    font-size: 1.6rem;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: none;
+    padding: 1.3em 1em;
+}
+
+input:focus,
+textarea:focus {
+    outline: #111;
+    border: 2px solid #111;
+}
+
+::placeholder {
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #383838;
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 2em;
+    padding: 0.8em;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #202020;
+}
+
+/* Social Links */
+.social-links {
+    margin: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links i {
+    font-size: 3rem;
+    margin: 0 0.5em;
+}
+
+/* Media Queries */
+
+/* For devices with a minimum width of 500px */
+@media (min-width: 500px) {
+    .contact {
+        padding: 10em 3em 0 3em;
+    }
+
+    .contact-modal {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .social-links i {
+        font-size: 3.5rem;
+    }
+}
+
+/* For devices with a minimum width of 768px */
+@media (min-width: 768px) {
+    .contact-tagline {
+        font-size: 1.6rem;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+    }
+}
+
+/* For devices with a minimum width of 1024px */
+@media (min-width: 1024px) {
+    .contact {
+        background: linear-gradient(
+            to bottom,
+            rgba(32, 32, 32, 1) 40%,
+            rgba(0, 123, 255, 0) 30%
+        );
+        padding: 10em 2em 0 2em;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 3em;
+        margin-top: 5em;
+    }
+
+    .textarea-div {
+        grid-column: 1/-1;
+    }
+
+    input {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        grid-column: 1/-1;
+        margin-top: 1em;
+    }
+}
